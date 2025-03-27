@@ -66,6 +66,10 @@ body {
   padding: 90px 24px 74px;
   font-family: "Poppins", sans-serif;
   background: url("/images/bg-intro-mobile.png") var(--red);
+
+  @media (width >= 1440px) {
+    background: url("/images/bg-intro-desktop.png") top var(--red) no-repeat;
+  }
 }
 
 h1, h2, h3, h4 {
