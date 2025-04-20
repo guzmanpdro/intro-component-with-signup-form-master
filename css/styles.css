@@ -66,6 +66,10 @@ body {
   padding: 90px 24px 74px;
   font-family: "Poppins", sans-serif;
   background: url("/images/bg-intro-mobile.png") var(--red);
+
+  @media (width >= 1440px) {
+    background: url("/images/bg-intro-desktop.png") top var(--red) no-repeat;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -74,6 +78,7 @@ h1, h2, h3, h4 {
 
 p {
   text-wrap: pretty;
+  line-height: 1.5;
 }
 
 .title {
@@ -162,4 +167,48 @@ p {
   font-weight: 700;
   color: var(--red);
   text-decoration: none;
+}
+
+@media (width >= 1440px) {
+  body {
+    padding-top: 120px;
+  }
+
+  .free-trial-sec {
+    display: flex;
+    max-width: 1105px;
+    margin-inline: auto;
+  }
+
+  .free-trial-form .free-trial {
+    padding: 18px;
+  }
+
+  .free-trial-form .form {
+    padding: 40px;
+  }
+
+  .form .form-input:not(.form-input[type="submit"]) {
+    margin-bottom: 22px;
+  }
+
+  .terms-and-services {
+    max-width: fit-content;
+  }
+
+  .free-trial-info {
+    max-width: 568px;
+    align-content: center;
+  }
+
+  .free-trial-info .title,
+  .free-trial-info .description {
+    text-align: start;
+  }
+
+  .free-trial-info .title {
+    font-size: 49px;
+    line-height: 1.1;
+    margin-top: 64px;
+  }
 }
