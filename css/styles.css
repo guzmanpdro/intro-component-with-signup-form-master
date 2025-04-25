@@ -171,6 +171,7 @@ p {
 
 @media (width >= 1440px) {
   body {
+    min-height: 800px;
     padding-top: 120px;
   }
 
