@@ -212,4 +212,8 @@ p {
     line-height: 1.1;
     margin-top: 64px;
   }
+
+  .free-trial-form {
+    flex-grow: 1;
+  }
 }
