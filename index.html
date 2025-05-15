@@ -6,7 +6,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <meta name="description" content="See how experienced developers solve problems in real-time.">
+  <script src="./js/script.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
 </head>
 <body>
   <main>
@@ -21,12 +24,20 @@
           <p class="free-trial-text"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
     
-        <form action="" method="POST" class="form">
+        <form class="form" novalidate>
           <fieldset>
-            <input type="text" name="" id="name" placeholder="First Name" class="form-input" required>
-            <input type="text" name="" id="lastName" placeholder="Last Name" class="form-input" required>
-            <input type="email" name="" id="email" placeholder="Email Address" class="form-input" required>
-            <input type="password" name="" id="password" placeholder="Password" class="form-input" required>
+            <div class="form-control">
+              <input type="text" name="" id="name" placeholder="First Name" class="form-input" required>
+            </div>
+            <div class="form-control">
+              <input type="text" name="" id="lastName" placeholder="Last Name" class="form-input" required>
+            </div>
+            <div class="form-control">
+              <input type="email" name="" id="email" placeholder="Email Address" class="form-input" required>
+            </div>
+            <div class="form-control">
+              <input type="password" name="" id="password" placeholder="Password" class="form-input" required>
+            </div>
           </fieldset>
           <input type="submit" value="Claim your free trial" class="form-input">
           <p class="terms-and-services">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
