@@ -125,9 +125,13 @@ p {
   border: none;
 }
 
+.form-control {
+  margin-bottom: 20px;
+}
+
 .form-input {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -140,6 +144,19 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
+}
+
+.form-input.invalid {
+  background: url("../images//icon-error.svg") 93% 50% no-repeat;
+  border-color: var(--red);
+}
+
+.error-message {
+  font-size: .8rem;
+  font-weight: 500;
+  font-style: italic;
+  text-align: end;
+  color: var(--red);
 }
 
 .form-input[type="submit"] {
@@ -169,7 +186,13 @@ p {
   text-decoration: none;
 }
 
-@media (width >= 1440px) {
+@media (620px <= width <= 1024px) {
+  .form-input.invalid {
+    background-position: 96% 50%;
+  }
+}
+
+@media (width >= 1024px) {
   body {
     min-height: 800px;
     padding-top: 120px;
@@ -189,7 +212,7 @@ p {
     padding: 40px;
   }
 
-  .form .form-input:not(.form-input[type="submit"]) {
+  .form-control {
     margin-bottom: 22px;
   }
 
