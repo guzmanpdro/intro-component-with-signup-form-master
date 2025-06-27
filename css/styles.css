@@ -67,7 +67,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: url("../images/bg-intro-mobile.png") var(--red);
 
-  @media (min-width: 1440px) {
+  @media (min-width: 90rem) {
     background: url("../images/bg-intro-desktop.png") top var(--red) no-repeat;
   }
 }
@@ -186,13 +186,13 @@ p {
   text-decoration: none;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 38.75rem) {
   .form-input.invalid {
     background-position: 96% 50%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     min-height: 800px;
     padding-top: 120px;
