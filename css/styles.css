@@ -195,7 +195,7 @@ p {
 @media (min-width: 64rem) {
   body {
     min-height: 800px;
-    padding-top: 120px;
+    padding-block-start: 120px;
   }
 
   .free-trial-sec {
