@@ -67,7 +67,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: url("../images/bg-intro-mobile.png") var(--red);
 
-  @media (width >= 1440px) {
+  @media (min-width: 1440px) {
     background: url("../images/bg-intro-desktop.png") top var(--red) no-repeat;
   }
 }
@@ -84,20 +84,20 @@ p {
 .title {
   font-size: 27px;
   line-height: 1.35;
-  margin-bottom: 24px;
+  margin-block-end: 24px;
   color: var(--white);
   text-align: center;
 }
 
 .description {
-  margin-bottom: 65px;
+  margin-block-end: 65px;
   text-align: center;
   color: var(--white);
 }
 
 .free-trial {
   padding: 20px;
-  margin-bottom: 24px;
+  margin-block-end: 24px;
   color: var(--white);
   border-radius: 8px;
   box-shadow: 0 8px var(--dark-blue-shadow);
@@ -126,12 +126,12 @@ p {
 }
 
 .form-control {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .form-input {
   width: 100%;
-  margin-bottom: 8px;
+  margin-block-end: 8px;
   padding: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -160,7 +160,7 @@ p {
 }
 
 .form-input[type="submit"] {
-  margin-bottom: 12px;
+  margin-block-end: 12px;
   color: var(--white);
   background-color: var(--green);
   border: none;
@@ -186,13 +186,13 @@ p {
   text-decoration: none;
 }
 
-@media (620px <= width <= 1024px) {
+@media (min-width: 620px) {
   .form-input.invalid {
     background-position: 96% 50%;
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
   body {
     min-height: 800px;
     padding-top: 120px;
@@ -213,7 +213,7 @@ p {
   }
 
   .form-control {
-    margin-bottom: 22px;
+    margin-block-end: 22px;
   }
 
   .terms-and-services {
@@ -233,7 +233,7 @@ p {
   .free-trial-info .title {
     font-size: 49px;
     line-height: 1.1;
-    margin-top: 64px;
+    margin-block-start: 64px;
   }
 
   .free-trial-form {
