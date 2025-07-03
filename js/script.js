@@ -1,3 +1,5 @@
+/* global Toastify:readonly */
+
 const $form = document.querySelector('form')
 const $inputs = document.querySelectorAll('input')
 const toastMessage = Toastify({
