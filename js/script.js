@@ -1,5 +1,12 @@
 const $form = document.querySelector('form')
 const $inputs = document.querySelectorAll('input')
+const toastMessage = Toastify({
+  text: 'Free trial requested, thanks',
+  duration: 3000,
+  style: {
+    background: "linear-gradient(to right, hsl(154, 59%, 51%), hsl(248, 32%, 49%)",
+  }
+})
 
 $form.addEventListener('submit', (event) => {  
   event.preventDefault()
@@ -14,13 +21,7 @@ $form.addEventListener('submit', (event) => {
   })
 
   if (formIsValid) {
-    Toastify({
-      text: 'Free trial requested, thanks',
-      duration: 3000,
-      style: {
-        background: "linear-gradient(to right, hsl(154, 59%, 51%), hsl(248, 32%, 49%)",
-      }
-    }).showToast();
+    toastMessage.showToast();
     $form.reset()
   }
 })
